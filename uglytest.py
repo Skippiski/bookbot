@@ -22,7 +22,8 @@ def main ():
     filepath = "books/frankenstein.txt"
     book_text = get_book_text(filepath)
     num_words1 = num_words(book_text)
-    print(book_text,f"{num_words1} words found in the document.")
+    letter_count1 = letter_count(book_text)
+    print(book_text,letter_count1,f"{num_words1} words found in the document.")
 
-
-main()
+if __name__ == "__main__":
+    main()
