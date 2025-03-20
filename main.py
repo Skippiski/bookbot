@@ -4,15 +4,14 @@ def get_book_text(filepath):
 
     return file_contents
 
-def num_words(file_contents):
-    words = file_contents.split()
-    return len(words)
+from stats import num_words, letter_count
 
 def main ():
     filepath = "books/frankenstein.txt"
     book_text = get_book_text(filepath)
-    total_words = num_words(book_text)
-    print(book_text,f"{total_words} words found in the document.")
+    num_words1 = num_words(book_text)
+    letter_count1 = letter_count(book_text)
+    print(book_text,letter_count1,f"{num_words1} words found in the document.")
 
 
 main()
